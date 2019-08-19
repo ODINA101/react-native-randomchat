@@ -20,7 +20,7 @@ class Input extends Component {
                 }}
                     onChangeText={(text) => this.props.onChangeText(text)}
                     placeholderTextColor="#34385e"
-                    placeholder="type message..."
+                    placeholder="დაწერე შეტყობინება..."
                     value={this.props.value}
                 />
                 <View style={{ width: 15 }} />
