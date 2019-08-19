@@ -18,11 +18,13 @@ class Input extends Component {
                     padding: 12
 
                 }}
+                    onChangeText={(text) => this.props.onChangeText(text)}
                     placeholderTextColor="#34385e"
                     placeholder="type message..."
+                    value={this.props.value}
                 />
                 <View style={{ width: 15 }} />
-                <TouchableRipple onPress={() => { }} style={{ width: 46, elevation: 5, height: 46, justifyContent: 'center', borderRadius: 23, backgroundColor: '#a77af4', alignItems: 'center' }}>
+                <TouchableRipple borderless={true} onPress={() => { this.props.send() }} style={{ width: 46, elevation: 5, height: 46, justifyContent: 'center', borderRadius: 23, backgroundColor: '#a77af4', alignItems: 'center' }}>
                     <Feather name="send" color='#FFF' size={25} />
                 </TouchableRipple>
             </View>
