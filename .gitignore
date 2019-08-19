@@ -24,9 +24,6 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
-
- android/java_pid17721.hprof
- 
 build/
 .idea
 .gradle
